@@ -12,6 +12,12 @@
     "project": "./tsconfig.json"
   },
   "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "tsdoc/syntax": "warn",
     //"@typescript-eslint/no-floating-promises": "warn",
     "@typescript-eslint/camelcase": "off",

@@ -61,6 +61,7 @@ export interface ConfigProps {
   MAX_SESSION_MINUTES: number;
   DEV_ID: string;
   VERSION: string;
+  KEEP_APP_ALWAYS_ON: boolean;
 }
 
 export default {
@@ -125,6 +126,8 @@ export default {
 
   // ID of developer's Facebook account
   DEV_ID: parseEnvString('DEV_ID') || '',
+
+  KEEP_APP_ALWAYS_ON: parseEnvBoolean('KEEP_APP_ALWAYS_ON') || false,
 
   // Project version. You don't need to set this.
   VERSION: '5.0.2',
