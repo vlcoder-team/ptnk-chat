@@ -62,7 +62,7 @@ export interface ConfigProps {
   DEV_ID: string;
   VERSION: string;
   KEEP_APP_ALWAYS_ON: boolean;
-  NEW_PERSONA_PROFILE_PICTURE: boolean;
+  IS_NEW_PERSONA_PROFILE_PICTURE: boolean;
 }
 
 export default {
@@ -88,7 +88,7 @@ export default {
   APP_NAME: parseEnvString('APP_NAME') || 'ptnkchat',
 
   // App display name
-  APP_DISPLAY_NAME: parseEnvString('APP_DISPLAY_NAME') || 'PTNK Chatible',
+  APP_DISPLAY_NAME: parseEnvString('APP_DISPLAY_NAME') || 'VLCoder Chatbot Messenger',
 
   // Page persona profile picture
   PERSONA_PROFILE_PICTURE:
@@ -130,7 +130,7 @@ export default {
 
   KEEP_APP_ALWAYS_ON: parseEnvBoolean('KEEP_APP_ALWAYS_ON') || false,
 
-  NEW_PERSONA_PROFILE_PICTURE: parseEnvBoolean('NEW_PERSONA_PROFILE_PICTURE') || false,
+  IS_NEW_PERSONA_PROFILE_PICTURE: parseEnvBoolean('IS_NEW_PERSONA_PROFILE_PICTURE') || false,
 
   // Project version. You don't need to set this.
   VERSION: '5.0.2',

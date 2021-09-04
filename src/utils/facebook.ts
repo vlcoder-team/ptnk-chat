@@ -128,7 +128,7 @@ const setPersona = async (): Promise<void> => {
     logger.logError('facebook::setPersona::getPersonas', 'Failed to send request to Facebook', err, true);
   }
 
-  if (setUp && !config.NEW_PERSONA_PROFILE_PICTURE) {
+  if (setUp && !config.IS_NEW_PERSONA_PROFILE_PICTURE) {
     console.log('setPersona succeed. Use existing persona ID.');
     return;
   }
