@@ -62,6 +62,7 @@ export interface ConfigProps {
   DEV_ID: string;
   VERSION: string;
   KEEP_APP_ALWAYS_ON: boolean;
+  NEW_PERSONA_PROFILE_PICTURE: boolean;
 }
 
 export default {
@@ -128,6 +129,8 @@ export default {
   DEV_ID: parseEnvString('DEV_ID') || '',
 
   KEEP_APP_ALWAYS_ON: parseEnvBoolean('KEEP_APP_ALWAYS_ON') || false,
+
+  NEW_PERSONA_PROFILE_PICTURE: parseEnvBoolean('NEW_PERSONA_PROFILE_PICTURE') || false,
 
   // Project version. You don't need to set this.
   VERSION: '5.0.2',
